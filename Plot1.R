@@ -2,7 +2,7 @@
 # Save text file into directory "ExData_Plotting1"
 
 df <- read.table("./ExData_Plotting1/household_power_consumption.txt", sep = ";", header = TRUE)
-n1 <- as.Date(as.character(df$Date[1]),"%d/%m/%Y") #Capital Y means 4 digits, not 2
+df$Date <- as.Date(as.character(df$Date),"%d/%m/%Y") #Capital Y means 4 digits, not 2
 df <- subset(df,df$Date=="2007-02-01" | df$Date=="2007-02-02")
 
 #Plot 1
