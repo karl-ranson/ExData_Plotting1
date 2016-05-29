@@ -1,9 +1,3 @@
-library(graphics)
-library(grDevices)
-
-library(lattice)
-library(grid)
-library(lubridate)
 
 # Save text file into directory "ExData_Plotting1"
 
